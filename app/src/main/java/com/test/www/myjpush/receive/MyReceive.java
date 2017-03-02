@@ -38,7 +38,8 @@ public class MyReceive extends BroadcastReceiver {
         }
 
         if (action.equals("notification_clicked")) {
-            Log.i("=====MyReceive===","处理点击事件");
+            String mTitle = intent.getStringExtra("jPush_message");
+            Log.i("=====MyReceive===","处理点击事件： " + mTitle);
             //处理点击事件
         }
 
