@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.test.www.myjpush.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Hello JPush!" />
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="19sp"/>
+
+    <EditText
+        android:id="@+id/mAliasValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        />
+    <Button
+        android:id="@+id/mSetAliasValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置别名"
+        />
+
+    <EditText
+        android:id="@+id/mTagValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        />
+    <Button
+        android:id="@+id/mSetTagValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置Tag值"
+        />
+
+</LinearLayout>
