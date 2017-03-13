@@ -39,7 +39,9 @@ public class JPushReceive extends BroadcastReceiver {
             System.out.println("===收到了Notification ID是：" + bundle.getInt(JPushInterface.EXTRA_NOTIFICATION_ID));
         }else if (JPushInterface.ACTION_MESSAGE_RECEIVED.equals(intent.getAction())) {
             String message = bundle.getString(JPushInterface.EXTRA_MESSAGE);
+            String mTest = bundle.getString(JPushInterface.EXTRA_EXTRA);
             System.out.println("===收到了自定义消息。消息内容是：" + message);
+            System.out.println("===收到了自定义消息内容===：" + mTest);
             // 自定义消息不会展示在通知栏，完全要开发者写代码去处理
             processCustomMessage(context,bundle);
 
